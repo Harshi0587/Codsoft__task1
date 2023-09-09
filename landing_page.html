@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="landing_page.css">
+        <title>Book Your Tickets</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <h1>Book Your Dream Tour</h1>
+            <p>Explore exciting destinations with us.Secure your spot now!</p>
+            <a href="#booking-form" class="cta-button">Book Now</a>
+        </section>
+
+        <section id="about">
+            <h2>About Our Tours</h2>
+            <p>Discover the world's most amazing places with our expert guides.</p>
+        </section>
+
+        <section id="schedule">
+            <h2>Tour Schedule</h2>
+            <p>Check out our upcoming tour dates and destiantions.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance with your booking? Contact us below.</p>
+        </section>
+
+        <section id="booking-form">
+            <h2>Book Your Tour</h2>
+            <div class="booking-background">
+                <form action="process_booking.php" method="post">
+                    <label for="name"><bold>Name:</bold></label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email"><bold>Email:</bold></label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="tour"><bold>Select Tour:</bold></label>
+                    <select id="tour" name="tour" required>
+                        <option value="tour1">Tour 1</option>
+                        <option value="tour2">Tour 2</option>
+                        <option value="tour3">Tour 3</option>
+                    </select>
+
+                    <button type="submit" class="cta-button">Book Now</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>"Take only memories, leave only footprints."</p>
+        </footer>
+
+    </body>
+</html>
